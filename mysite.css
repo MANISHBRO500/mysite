@@ -1,0 +1,134 @@
+*{
+ text-decoration: none;
+}
+.navbar{
+background: crimson;
+font-family: calibri; 
+padding-right: 15px;
+padding-left: 15px;
+}
+.navdiv{
+display: flex;
+align-items: center;
+justify-content:space-between;
+}
+.logo a{
+font-size: 35px; 
+font-weight: 600;
+color: white;
+}
+li{
+list-style: none; 
+display: inline-block;
+}
+
+li a{
+color: white;
+font-size: 18px;
+font-weight: bold;
+margin-right: 25px;
+    transition: 0.7s;
+}
+li a:hover{
+ background-color: indianred;
+    border: 1px;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+button{
+background-color: black;
+margin-left: 10px;
+border-radius: 10px;
+padding: 10px;
+width: 90px;
+}
+button a{
+color: white; 
+font-weight: bold;
+font-size: 15px;
+}
+.textI{
+    padding: 60px;
+    font-family: cursive;
+    
+}
+.imgs{
+    float: right;
+    margin: 60px;
+    height: 350px;
+}
+.imgss{
+     float: left;
+    margin: 60px;
+    height: 350px;
+}
+footer{
+    background-color: gray;
+    padding-bottom: 40px;
+    
+text-align: center;    
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .navdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo a {
+    font-size: 28px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  li a {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+  }
+
+  .textI {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .imgs,
+  .imgss {
+    float: none;
+    display: block;
+    margin: 20px auto;
+    height: 200px;
+    width: 90%;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
