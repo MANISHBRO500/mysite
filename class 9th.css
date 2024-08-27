@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #00274d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 700;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00274d;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.button-container button {
+    padding: 15px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.button-container button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.footer-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.like-section {
+    text-align: center;
+}
+
+.like-section h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .button-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    .button-container button {
+        font-size: 0.9em;
+    }
+
+    .intro-image, .footer-image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button-container button {
+        padding: 12px;
+        font-size: 0.85em;
+    }
+}

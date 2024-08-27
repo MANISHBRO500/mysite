@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Study Resources</title>
+    <link rel="stylesheet" href="class%209th.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Class 9 Study Resources</h1>
+    </div>
+</header>
+
+<main class="container">
+    <section class="intro">
+        <img src="https://i.imgur.com/7osH68W.jpg" alt="Study Resources" class="intro-image"/>
+        <p>Welcome to your go-to resource for all Class 9 study materials. Explore subjects, practice questions, and previous year papers.</p>
+    </section>
+
+    <section class="subject-links">
+        <h2>Subjects</h2>
+        <div class="button-container">
+            <button><a href="#">Science</a></button>
+            <button><a href="#">History</a></button>
+            <button><a href="#">Geography</a></button>
+            <button><a href="#">Civics</a></button>
+            <button><a href="#">English</a></button>
+            <button><a href="#">Hindi</a></button>
+        </div>
+    </section>
+
+    <section class="question-answers">
+        <h2>Question & Answer</h2>
+        <div class="button-container">
+            <button><a href="#">Maths</a></button>
+            <button><a href="#">Science</a></button>
+            <button><a href="#">It So Happened</a></button>
+            <button><a href="#">Honey Dew</a></button>
+            <button><a href="#">ICT</a></button>
+            <button><a href="#">Hindi</a></button>
+            <button><a href="#">History</a></button>
+            <button><a href="#">Geography</a></button>
+            <button><a href="#">Civics</a></button>
+        </div>
+    </section>
+
+    <section class="exam-papers">
+        <h2>Question Papers (2023-2024)</h2>
+        <div class="button-container">
+            <button><a href="#">Periodic Test 1</a></button>
+            <button><a href="#">Periodic Test 2</a></button>
+            <button><a href="#">Half-Yearly Examination</a></button>
+            <button><a href="#">Periodic Test 3</a></button>
+            <button><a href="#">Periodic Test 4</a></button>
+            <button><a href="#">Annual Examination</a></button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <img src="https://i.imgur.com/w3tGblp.jpg" alt="Footer Image" class="footer-image"/>
+        <div class="like-section">
+            <h2>Like Counter</h2>
+            <p id="likeCount">0 likes</p>
+            <button onclick="incrementLikes()">Like</button>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let count = 0;
+    function incrementLikes() {
+        count++;
+        document.getElementById("likeCount").innerText = count + (count === 1 ? " like" : " likes");
+    }
+</script>
+
+</body>
+</html>
