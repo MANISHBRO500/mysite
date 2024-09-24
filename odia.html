@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .option input {
+            margin-right: 10px;
+        }
+
+        /* Styling for wrong answers */
+        .option.wrong {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Styling for correct answers */
+        .option.correct {
+            color: green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .option {
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MCQ Quiz</h1>
+
+    <div class="container" id="quiz">
+
+        <!-- Questions -->
+        <div class="question">
+            <h3>1. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ କବିତାର କବି କିଏ ?</h3>
+            <label class="option"><input type="radio" name="q1" value="A"> (A) ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର</label>
+            <label class="option"><input type="radio" name="q1" value="B"> (B) ମଧୁସୂଦନ ଦାସ</label>
+            <label class="option"><input type="radio" name="q1" value="C"> (C) ଗୋପବନ୍ଧୁ ଦାସ</label>
+            <label class="option"><input type="radio" name="q1" value="D"> (D) ନନ୍ଦକିଶୋର ବଳ</label>
+        </div>
+
+        <div class="question">
+            <h3>2. କବି ‘ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର’ କେଉଁ କବି ଭାବରେ ଓଡ଼ିଶାରେ ପ୍ରସିଦ୍ଧ ?</h3>
+            <label class="option"><input type="radio" name="q2" value="A"> (A) କବିବର</label>
+            <label class="option"><input type="radio" name="q2" value="B"> (B) କାନ୍ତକବି</label>
+            <label class="option"><input type="radio" name="q2" value="C"> (C) ପ୍ରକୃତି କବି</label>
+            <label class="option"><input type="radio" name="q2" value="D"> (D) ପଲ୍ଲୀକବି</label>
+        </div>
+
+        <div class="question">
+            <h3>3. କାନ୍ତକବି ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର କେଉଁ ମସିହାରେ ଜନ୍ମଗ୍ରହଣ କରିଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q3" value="A"> (A) ୧୮୮୫</label>
+            <label class="option"><input type="radio" name="q3" value="B"> (B) ୧୯୦୦</label>
+            <label class="option"><input type="radio" name="q3" value="C"> (C) ୧୮୮୮</label>
+            <label class="option"><input type="radio" name="q3" value="D"> (D) ୧୯୦୬</label>
+        </div>
+
+        <div class="question">
+            <h3>4. କବି ଲକ୍ଷ୍ମୀକାନ୍ତ କଟକର କେଉଁ କଲେଜରେ ଉଚ୍ଚଶିକ୍ଷା ଲାଭ କରିଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q4" value="A"> (A) ଖ୍ରୀଷ୍ଟ</label>
+            <label class="option"><input type="radio" name="q4" value="B"> (B) ଜେକେବିକେ</label>
+            <label class="option"><input type="radio" name="q4" value="C"> (C) ଡିଏଭି</label>
+            <label class="option"><input type="radio" name="q4" value="D"> (D) ରେଭେନ୍ସା</label>
+        </div>
+
+        <div class="question">
+            <h3>5. କାହା ପ୍ରେରଣାରେ ଲକ୍ଷ୍ମୀକାନ୍ତ ସ୍ବାଧୀନତା ସଂଗ୍ରାମରେ ଯୋଗ ଦେଇଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q5" value="A"> (A) ଗୋପବନ୍ଧୁ ଦାସ</label>
+            <label class="option"><input type="radio" name="q5" value="B"> (B) ମହାତ୍ମା ଗାନ୍ଧୀ</label>
+            <label class="option"><input type="radio" name="q5" value="C"> (C) ବୀର ସୁରେନ୍ଦ୍ର ସାଏ</label>
+            <label class="option"><input type="radio" name="q5" value="D"> (D) ମଧୁସୂଦନ ଦାସ</label>
+        </div>
+
+        <div class="question">
+            <h3>6. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’’କୁ କେବେ ଓଡ଼ିଶା ସରକାର ରାଜ୍ୟ ସଙ୍ଗୀତର ମାନ୍ୟତା ପ୍ରଦାନ କରିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q6" value="A"> (A) ୨୦୨୦ ମସିହା ଜୁନ୍ ୭</label>
+            <label class="option"><input type="radio" name="q6" value="B"> (B) ୨୦୧୯ ମସିହା ଅଗଷ୍ଟ ୧୫</label>
+            <label class="option"><input type="radio" name="q6" value="C"> (C) ୨୦୦୦ ମସିହା ଜୁନ୍ ୭</label>
+            <label class="option"><input type="radio" name="q6" value="D"> (D) ୨୦୨୧ ମସିହା ଜାନୁୟାରୀ ୨୬</label>
+        </div>
+
+        <div class="question">
+            <h3>7. ନିମ୍ନଲିଖିତ ମଧ୍ୟରୁ କେଉଁଟି ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ କବିତାର ମୂଲ୍ୟ ?</h3>
+            <label class="option"><input type="radio" name="q7" value="A"> (A) ଧୈର୍ୟ</label>
+            <label class="option"><input type="radio" name="q7" value="B"> (B) ସାହସ</label>
+            <label class="option"><input type="radio" name="q7" value="C"> (C) ପ୍ରେମ</label>
+            <label class="option"><input type="radio" name="q7" value="D"> (D) ସ୍ବାଧୀନତା</label>
+        </div>
+
+        <div class="question">
+            <h3>8. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ କେଉଁ ପ୍ରେରଣା ଦେଇଥାଏ ?</h3>
+            <label class="option"><input type="radio" name="q8" value="A"> (A) ଦେଶପ୍ରେମ</label>
+            <label class="option"><input type="radio" name="q8" value="B"> (B) ଶାନ୍ତି</label>
+            <label class="option"><input type="radio" name="q8" value="C"> (C) ଶିକ୍ଷା</label>
+            <label class="option"><input type="radio" name="q8" value="D"> (D) ସମ୍ମାନ</label>
+        </div>
+
+        <div class="question">
+            <h3>9. କବି କେଉଁ ବିଷୟ ଉପରେ ଲେଖନ କରିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q9" value="A"> (A) ପ୍ରକୃତି</label>
+            <label class="option"><input type="radio" name="q9" value="B"> (B) ମାନବ ଜୀବନ</label>
+            <label class="option"><input type="radio" name="q9" value="C"> (C) ଦେଶଭକ୍ତି</label>
+            <label class="option"><input type="radio" name="q9" value="D"> (D) ସମ୍ବେଦନଶୀଳତା</label>
+        </div>
+
+        <div class="question">
+            <h3>10. କବି ଲକ୍ଷ୍ମୀକାନ୍ତଙ୍କ କାହା ଏକ ବୃହତ୍ କାର୍ଯ୍ୟ ଅଟକି ଯାଇଛି ?</h3>
+            <label class="option"><input type="radio" name="q10" value="A"> (A) ସାହିତ୍ୟ</label>
+            <label class="option"><input type="radio" name="q10" value="B"> (B) ଦେଶଭକ୍ତି</label>
+            <label class="option"><input type="radio" name="q10" value="C"> (C) ସଂଗୀତ</label>
+            <label class="option"><input type="radio" name="q10" value="D"> (D) କଳା</label>
+        </div>
+
+        <div class="question">
+            <h3>11. ଉତ୍କଳର ଆକାଶ କାହାର କଳରବରେ ମୁଖରିତ ?</h3>
+            <label class="option"><input type="radio" name="q11" value="A"> (A) କାକ ଓ କୋକିଳ</label>
+            <label class="option"><input type="radio" name="q11" value="B"> (B) ଶୂନ ଓ ଛଞ୍ଚାଣ</label>
+            <label class="option"><input type="radio" name="q11" value="C"> (C) ସୁନ୍ଦର ବିହଙ୍ଗ କୁଳ</label>
+            <label class="option"><input type="radio" name="q11" value="D"> (D) ଶାଗୁଣା ଓ ଚିଲ</label>
+        </div>
+
+        <div class="question">
+            <h3>12. ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର ବାଲ୍ୟାବସ୍ଥାରୁ କେଉଁ ବିଷୟ ପ୍ରତି ବିଶେଷ ଆକୃଷ୍ଟ ଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q12" value="A"> (A) ସଙ୍ଗୀତ ଓ ନାଟକ</label>
+            <label class="option"><input type="radio" name="q12" value="B"> (B) କଳା ଓ ସଙ୍ଗୀତ</label>
+            <label class="option"><input type="radio" name="q12" value="C"> (C) ସାହିତ୍ୟ ଓ ସଙ୍ଗୀତ</label>
+            <label class="option"><input type="radio" name="q12" value="D"> (D) ବିଜ୍ଞାନ ଓ ଗଣିତ</label>
+        </div>
+
+        <div class="question">
+            <h3>13. ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର କେଉଁ ବିଷୟରେ ଅନେକ ଉଚ୍ଚାଙ୍ଗ କବିତା ରଚନା କରିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q13" value="A"> (A) ଭକ୍ତି ଓ ବାତ୍ସଲ୍ୟ ରସାତ୍ମକ</label>
+            <label class="option"><input type="radio" name="q13" value="B"> (B) ସାମାଜିକ ଓ କାଳ୍ପନିକ</label>
+            <label class="option"><input type="radio" name="q13" value="C"> (C) ଆଧ୍ୟାତ୍ମିକ ଓ ଦେଶାତ୍ମବୋଧକ</label>
+            <label class="option"><input type="radio" name="q13" value="D"> (D) ଚେତନାଧର୍ମୀ ଓ ବିପ୍ଳବାତ୍ମକ</label>
+        </div>
+
+        <div class="question">
+            <h3>14. ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ରଙ୍କ ଲେଖନୀନିସୃତ ନିମ୍ନୋକ୍ତ କେଉଁ କୃତି ପାଠକଙ୍କୁ ଆନନ୍ଦ ଯୋଗାଇ ଆସୁଛି ?</h3>
+            <label class="option"><input type="radio" name="q14" value="A"> (A) କଣାମାମୁ</label>
+            <label class="option"><input type="radio" name="q14" value="B"> (B) ବୁଢ଼ା ଶଙ୍ଖାରି</label>
+            <label class="option"><input type="radio" name="q14" value="C"> (C) ଅସହଯୋଗୀର ଆତ୍ମକଥା</label>
+            <label class="option"><input type="radio" name="q14" value="D"> (D) ଜୀବନସଙ୍ଗୀତ</label>
+        </div>
+
+        <div class="question">
+            <h3>15. କବି ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର କେଉଁ ମସିହାରେ ଡଗର ପତ୍ରିକାର ପ୍ରତିଷ୍ଠା ଓ ସମ୍ପାଦନା କରିଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q15" value="A"> (A) ୧୯୨୭</label>
+            <label class="option"><input type="radio" name="q15" value="B"> (B) ୧୯୩୭</label>
+            <label class="option"><input type="radio" name="q15" value="C"> (C) ୧୯୪୭</label>
+            <label class="option"><input type="radio" name="q15" value="D"> (D) ୧୯୬୦</label>
+        </div>
+
+        <div class="question">
+            <h3>16. ଲକ୍ଷ୍ମୀକାନ୍ତଙ୍କ ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ର ସୃଜନାକାଳ କେବେ ?</h3>
+            <label class="option"><input type="radio" name="q16" value="A"> (A) ୧୯୦୦</label>
+            <label class="option"><input type="radio" name="q16" value="B"> (B) ୧୯୦୮</label>
+            <label class="option"><input type="radio" name="q16" value="C"> (C) ୧୯୦୧</label>
+            <label class="option"><input type="radio" name="q16" value="D"> (D) ୧୯୦୪</label>
+        </div>
+
+        <div class="question">
+            <h3>17. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ର ଆରମ୍ଭ ମଣ୍ଡଳୀ କେଉଁ ?</h3>
+            <label class="option"><input type="radio" name="q17" value="A"> (A) ସୂର୍ଯ୍ୟ</label>
+            <label class="option"><input type="radio" name="q17" value="B"> (B) ଚନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q17" value="C"> (C) ମନସୀ</label>
+            <label class="option"><input type="radio" name="q17" value="D"> (D) ସ୍ଥିତି</label>
+        </div>
+
+        <div class="question">
+            <h3>18. କବି ଲକ୍ଷ୍ମୀକାନ୍ତଙ୍କ ସ୍କୁଲ କେଉଁଥିଲା ?</h3>
+            <label class="option"><input type="radio" name="q18" value="A"> (A) ଗଣ୍ଧର୍ବ ମହାବିଦ୍ୟାଳୟ</label>
+            <label class="option"><input type="radio" name="q18" value="B"> (B) ଶ୍ରୀଘଟା ମହାବିଦ୍ୟାଳୟ</label>
+            <label class="option"><input type="radio" name="q18" value="C"> (C) ସୂର୍ଯ୍ୟ ମହାବିଦ୍ୟାଳୟ</label>
+            <label class="option"><input type="radio" name="q18" value="D"> (D) ସେନ୍ଟ୍ ଓଜ୍ ସ୍କୁଲ</label>
+        </div>
+
+        <div class="question">
+            <h3>19. କବି ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର କେଉଁ ଜନପଦର ?</h3>
+            <label class="option"><input type="radio" name="q19" value="A"> (A) ନବନୀତ</label>
+            <label class="option"><input type="radio" name="q19" value="B"> (B) ଗଜପତି</label>
+            <label class="option"><input type="radio" name="q19" value="C"> (C) ଗଁଜାମ</label>
+            <label class="option"><input type="radio" name="q19" value="D"> (D) ଧେନ୍କନାଲ</label>
+        </div>
+
+        <div class="question">
+            <h3>20. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ର ଭାଷା କେଉଁ ?</h3>
+            <label class="option"><input type="radio" name="q20" value="A"> (A) ସାଧାରଣ</label>
+            <label class="option"><input type="radio" name="q20" value="B"> (B) ରାଜ୍ୟ</label>
+            <label class="option"><input type="radio" name="q20" value="C"> (C) ସରଳ</label>
+            <label class="option"><input type="radio" name="q20" value="D"> (D) ସମ୍ବେଦନା</label>
+        </div>
+
+        <div class="question">
+            <h3>21. କବି ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର କେଉଁ ବିଷୟ ଉପରେ ଲେଖାନୁସାର କବି ଅଟୁଏ ?</h3>
+            <label class="option"><input type="radio" name="q21" value="A"> (A) ସାହିତ୍ୟ</label>
+            <label class="option"><input type="radio" name="q21" value="B"> (B) ଭକ୍ତି</label>
+            <label class="option"><input type="radio" name="q21" value="C"> (C) ସଙ୍ଗୀତ</label>
+            <label class="option"><input type="radio" name="q21" value="D"> (D) ଚିତ୍ରକଳା</label>
+        </div>
+
+        <div class="question">
+            <h3>22. କବି ଲକ୍ଷ୍ମୀକାନ୍ତଙ୍କ କେଉଁ କବିତା ଦେଶଭକ୍ତି ଦେଖାଏ ?</h3>
+            <label class="option"><input type="radio" name="q22" value="A"> (A) ଗୋଲପାକ୍ଷୀ</label>
+            <label class="option"><input type="radio" name="q22" value="B"> (B) ମାନବତା</label>
+            <label class="option"><input type="radio" name="q22" value="C"> (C) ଭାରତୀୟ କବି</label>
+            <label class="option"><input type="radio" name="q22" value="D"> (D) ଜୀବନସାର</label>
+        </div>
+
+        <div class="question">
+            <h3>23. କବି ଲକ୍ଷ୍ମୀକାନ୍ତଙ୍କ କେଉଁ କବିତା ଦେଶଭକ୍ତିକୁ ସୂଚିତ କରେ ?</h3>
+            <label class="option"><input type="radio" name="q23" value="A"> (A) ସୁପ୍ରିୟ</label>
+            <label class="option"><input type="radio" name="q23" value="B"> (B) ଜୀବନ ଆସୁ</label>
+            <label class="option"><input type="radio" name="q23" value="C"> (C) ନବୀନ ଜ୍ଞାନ</label>
+            <label class="option"><input type="radio" name="q23" value="D"> (D) ନୂତନ ପ୍ରଭାତ</label>
+        </div>
+
+        <button onclick="submitQuiz()">Submit</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const totalQuestions = 23;
+            let score = 0;
+
+            // Answers array: replace with correct answers for each question
+            const correctAnswers = [
+                "B", "A", "C", "A", "B", "A", "C", "A", "C", "C",
+                "C", "A", "C", "C", "A", "B", "A", "D", "B", "C",
+                "C", "A", "C", "A"
+            ];
+
+            // Check each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const answerValue = selectedOption.value;
+                    if (answerValue === correctAnswers[i - 1]) {
+                        score++;
+                        selectedOption.parentElement.classList.add('correct');
+                    } else {
+                        selectedOption.parentElement.classList.add('wrong');
+                    }
+                }
+            }
+
+            // Show the result
+            const result = document.getElementById('result');
+            result.textContent = `Your score is ${score} out of ${totalQuestions}`;
+        }
+    </script>
+</body>
+</html>
