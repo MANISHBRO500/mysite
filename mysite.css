@@ -1,134 +1,212 @@
-*{
- text-decoration: none;
-}
-.navbar{
-background: crimson;
-font-family: calibri; 
-padding-right: 15px;
-padding-left: 15px;
-}
-.navdiv{
-display: flex;
-align-items: center;
-justify-content:space-between;
-}
-.logo a{
-font-size: 35px; 
-font-weight: 600;
-color: white;
-}
-li{
-list-style: none; 
-display: inline-block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-li a{
-color: white;
-font-size: 18px;
-font-weight: bold;
-margin-right: 25px;
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: crimson;
+    padding: 10px 15px;
+    position: relative; /* Position relative for child elements */
+    overflow: hidden; /* Prevent overflow when animated */
+    animation: slideDown 0.8s ease-in-out; /* Animation for the navbar */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%); /* Start from above */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateY(0); /* End in place */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin-left: auto; /* Push logo to the right */
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif; /* Use the custom font */
+    font-size: 35px;
+    font-weight: 700; /* Bold weight */
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s ease; /* Add transition for logo */
+    animation: fadeIn 0.5s ease forwards; /* Animation for the logo */
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px); /* Start slightly above */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateY(0); /* End in place */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Hamburger menu (hidden on larger screens) */
+.toggle {
+    display: none; /* Hide by default (on larger screens) */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 3px 0;
+}
+
+/* Navigation menu (for mobile view) */
+ul {
+    display: flex;
+    list-style: none;
+    transition: max-height 0.3s ease; /* Add transition for height */
+    overflow: hidden; /* Prevent overflow when hidden */
+    max-height: 0; /* Initially set max-height to 0 for hidden state */
+    flex-direction: column; /* Stack links vertically in mobile view */
+    width: 100%; /* Ensure full width for mobile */
+}
+
+ul.active {
+    max-height: 500px; /* Set to a maximum height to allow visibility when active */
+}
+
+li {
+    margin: 10px 0; /* Spacing for mobile */
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
     transition: 0.7s;
 }
-li a:hover{
- background-color: indianred;
-    border: 1px;
+
+li a:hover {
+    background-color: indianred;
+    border: 1px solid white;
     border-radius: 50px;
-    margin: 20px;
-    padding: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 10px 12px;
 }
 
-button{
-background-color: black;
-margin-left: 10px;
-border-radius: 10px;
-padding: 10px;
-width: 90px;
+/* Button styles */
+button {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
 }
-button a{
-color: white; 
-font-weight: bold;
-font-size: 15px;
+
+button a {
+    color: white; 
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
 }
-.textI{
+
+.textI {
     padding: 60px;
     font-family: cursive;
-    
 }
-.imgs{
-    float: right;
+
+.imgs, .imgss {
     margin: 60px;
     height: 350px;
 }
-.imgss{
-     float: left;
-    margin: 60px;
-    height: 350px;
-}
-footer{
+
+/* Footer styles */
+footer {
     background-color: gray;
-    padding-bottom: 40px;
-    
-text-align: center;    
+    text-align: center;    
+    padding: 20px;
 }
 
+/* Mobile-first design */
+@media screen and (max-width: 768px) {
+    .toggle {
+        display: flex; /* Show toggle (hamburger menu) on mobile screens */
+    }
 
+    .navdiv {
+        flex-direction: column; /* Stack items on top of each other */
+    }
 
-@media screen and (max-width: 600px) {
-  .navbar {
-    padding-right: 10px;
-    padding-left: 10px;
-    text-align: center;
-  }
+    ul {
+        max-height: 0; /* Initially hidden */
+        transition: max-height 0.5s ease; /* Transition for max-height */
+    }
 
-  .navdiv {
-    flex-direction: column;
-    align-items: center;
-  }
+    ul.active {
+        max-height: 500px; /* Allow visibility when active */
+    }
 
-  .logo a {
-    font-size: 28px;
-  }
+    li {
+        margin: 10px 0; /* Spacing for mobile */
+    }
 
-  ul {
-    padding: 0;
-    margin: 0;
-  }
+    li a {
+        font-size: 16px;
+        margin-right: 0;
+    }
 
-  li {
-    display: block;
-    margin: 10px 0;
-  }
+    .imgs, .imgss {
+        height: 200px;
+        width: 90%;
+        margin: 20px auto;
+    }
 
-  li a {
-    font-size: 16px;
-    margin-right: 0;
-  }
+    .logoimg{
+      height: 50px;
+      border: 100px;
+      border-radius: 30px;
+    }
 
-  button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 12px;
-  }
-
-  .textI {
-    padding: 20px;
-    font-size: 16px;
-  }
-
-  .imgs,
-  .imgss {
-    float: none;
-    display: block;
-    margin: 20px auto;
-    height: 200px;
-    width: 90%;
-  }
-
-  footer {
-    padding: 20px;
-    font-size: 14px;
-  }
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
 }
 
+/* For larger screens (desktop) */
+@media screen and (min-width: 769px) {
+    .toggle {
+        display: none; /* Hide the toggle button (hamburger menu) on desktop */
+    }
+
+    ul {
+        flex-direction: row; /* Display links horizontally on desktop */
+        max-height: none; /* No height limit on larger screens */
+        justify-content: flex-end; /* Align to the right */
+    }
+
+    li {
+        margin: 0 15px; /* Add space between links */
+    }
+
+    li a {
+        font-size: 18px; /* Larger font size for desktop */
+    }
+}
+.logoimg{
+      height: 50px;
+      border: 100px;
+      border-radius: 30px;
+    }
