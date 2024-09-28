@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .option input {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MCQ Quiz</h1>
+
+    <div class="container" id="quiz">
+        
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. କୃଷ୍ଣ ତାଙ୍କ ପିତାଙ୍କୁ କ’ଣ ମାଗନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q1" value="A"> (A) ପୋଖରୀର ପଦ୍ମ</label>
+            <label class="option"><input type="radio" name="q1" value="B"> (B) ନବନୀତ</label>
+            <label class="option"><input type="radio" name="q1" value="C"> (C) ଆକାଶର ଚନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q1" value="D"> (D) ଧନ</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. କୃଷ୍ଣ କେଉଁ ସ୍ଥାନକୁ ଉଠିପାରନ୍ତି ନାହିଁ ବୋଲି ଯଶୋଦା କହିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q2" value="A"> (A) ପର୍ବତକୁ</label>
+            <label class="option"><input type="radio" name="q2" value="B"> (B) ଗଛ ଉପରକୁ</label>
+            <label class="option"><input type="radio" name="q2" value="C"> (C) ଉଚ୍ଚ ପାବଚ୍ଛକୁ</label>
+            <label class="option"><input type="radio" name="q2" value="D"> (D) ପଲ୍ଯଙ୍କକୁ</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. କେଉଁଠାରେ ଭୟଙ୍କର ମୂର୍ତ୍ତିର ଚିତ୍ର ଦେଖ୍ କୃଷ୍ଣ ପଳାଇଯାଇଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q3" value="A"> (A) କାନ୍ଥରେ</label>
+            <label class="option"><input type="radio" name="q3" value="B"> (B) ଭୂତଳେ</label>
+            <label class="option"><input type="radio" name="q3" value="C"> (C) ନୃତ୍ୟଶାଳାରେ</label>
+            <label class="option"><input type="radio" name="q3" value="D"> (D) ଚିତ୍ରଶାଳାରେ</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. କୃଷ୍ଣ କାହାକୁ ଦେଖ୍ ଡରୁଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q4" value="A"> (A) ରାକ୍ଷସମାନଙ୍କୁ</label>
+            <label class="option"><input type="radio" name="q4" value="B"> (B) ହାତୀକୁ</label>
+            <label class="option"><input type="radio" name="q4" value="C"> (C) ବାଘକୁ</label>
+            <label class="option"><input type="radio" name="q4" value="D"> (D) ଛାଇକୁ</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. ‘ମଧୁଭୁବନ’ କହିଲେ କେଉଁ ସ୍ଥାନକୁ ବୁଝାଏ ?</h3>
+            <label class="option"><input type="radio" name="q5" value="A"> (A) ଗୋପପୁର</label>
+            <label class="option"><input type="radio" name="q5" value="B"> (B) ମଥୁରା</label>
+            <label class="option"><input type="radio" name="q5" value="C"> (C) ଦ୍ବାରିକା</label>
+            <label class="option"><input type="radio" name="q5" value="D"> (D) ହସ୍ତିନା</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. କୃଷ୍ଣ ବନକୁ ଗଲେ ଯଶୋଦାଙ୍କ ମନରେ କି ଅନୁଭୂତି ସୃଷ୍ଟି ହୁଏ ?</h3>
+            <label class="option"><input type="radio" name="q6" value="A"> (A) ପର୍ବ</label>
+            <label class="option"><input type="radio" name="q6" value="B"> (B) ଆନନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q6" value="C"> (C) ସୁଖଦ</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. ରାତିରେ ଶ୍ରୀକୃଷ୍ଣ କାହା କୋଳରେ ଶୟନ କରୁଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q7" value="A"> (A) ଯଶୋଦାଙ୍କର</label>
+            <label class="option"><input type="radio" name="q7" value="B"> (B) ନନ୍ଦଙ୍କର</label>
+            <label class="option"><input type="radio" name="q7" value="C"> (C) ବଳରାମଙ୍କର</label>
+            <label class="option"><input type="radio" name="q7" value="D"> (D) ଉଗ୍ରସେନଙ୍କର</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. କୃଷ୍ଣ କ୍ଳାନ୍ତ ହୋଇ ରାତ୍ରିରେ କେଉଁଠାରେ ଶୋଇ ଯାଉଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q8" value="A"> (A) ଭୂତଳେ</label>
+            <label class="option"><input type="radio" name="q8" value="B"> (B) ବନରେ</label>
+            <label class="option"><input type="radio" name="q8" value="C"> (C) ପିତାଙ୍କ କୋଳରେ</label>
+            <label class="option"><input type="radio" name="q8" value="D"> (D) ମାତାଙ୍କ କୋଳରେ</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. ‘ପିତାଙ୍କୁ ମାଗିବ କେହୁ ହରିରେ ଜୀବଧନ’ – ଏଠାରେ ‘ହରି’ ଶବ୍ଦଟି କେଉଁ ଅର୍ଥରେ ବ୍ୟବହୃତ ହୋଇଛି ?</h3>
+            <label class="option"><input type="radio" name="q9" value="A"> (A) ଖେଳଣା</label>
+            <label class="option"><input type="radio" name="q9" value="B"> (B) ନାରାୟଣ</label>
+            <label class="option"><input type="radio" name="q9" value="C"> (C) ଚାନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q9" value="D"> (D) ନେଉଳ</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. ‘କାହାମୁଖ ଅନାଇ ବଞ୍ଚିବି’ କବିତାଟିର କବି କିଏ ?</h3>
+            <label class="option"><input type="radio" name="q10" value="A"> (A) ମଧୁସୂଦନ ରାଓ</label>
+            <label class="option"><input type="radio" name="q10" value="B"> (B) ଭକ୍ତଚରଣ ଦାସ</label>
+            <label class="option"><input type="radio" name="q10" value="C"> (C) ଦୀନବନ୍ଧୁ ଦାସ</label>
+            <label class="option"><input type="radio" name="q10" value="D"> (D) ଜଗନ୍ନାଥ ଦାସ</label>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. କୃଷ୍ଣଙ୍କର କେଉଁ ଅଙ୍ଗରେ କୁଣ୍ଡଳ ଶୋଭାପାଏ ?</h3>
+            <label class="option"><input type="radio" name="q11" value="A"> (A) ନାକରେ</label>
+            <label class="option"><input type="radio" name="q11" value="B"> (B) ଶିରରେ</label>
+            <label class="option"><input type="radio" name="q11" value="C"> (C) କାନରେ</label>
+            <label class="option"><input type="radio" name="q11" value="D"> (D) ହାତରେ</label>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. କୃଷ୍ଣଙ୍କ କାନରେ କ’ଣ ଶୋଭାପାଏ ?</h3>
+            <label class="option"><input type="radio" name="q12" value="A"> (A) ସୁବର୍ଣ୍ଣ କୁଣ୍ଡଳ</label>
+            <label class="option"><input type="radio" name="q12" value="B"> (B) ମୋତିମାଳି</label>
+            <label class="option"><input type="radio" name="q12" value="C"> (C) ହୀରାଫୁଲ</label>
+            <label class="option"><input type="radio" name="q12" value="D"> (D) ସୁବର୍ଣ୍ଣମାଳି</label>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. କୃଷ୍ଣ କ’ଣ ଦେଖୁ ଘରୁ ପଳାଇଯା’ନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q13" value="A"> (A) ରାକ୍ଷସ ମୂର୍ତ୍ତି</label>
+            <label class="option"><input type="radio" name="q13" value="B"> (B) କାନ୍ଥରେ ଥିବା ଭୟଙ୍କର ଚିତ୍ର</label>
+            <label class="option"><input type="radio" name="q13" value="C"> (C) ଭୟଙ୍କର ପଶୁ</label>
+            <label class="option"><input type="radio" name="q13" value="D"> (D) ସର୍ପ</label>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. କଂସପୁର ଗଲେ ଶ୍ରୀକୃଷ୍ଣ କାହାକୁ ଦେଖୁବେ ବୋଲି ଯଶୋଦା କହିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q14" value="A"> (A) କଂସକୁ</label>
+            <label class="option"><input type="radio" name="q14" value="B"> (B) ଯମୁନାନଦୀକୁ</label>
+            <label class="option"><input type="radio" name="q14" value="C"> (C) ଅବିଜିତଙ୍କୁ</label>
+            <label class="option"><input type="radio" name="q14" value="D"> (D) ଅନ୍ୟ କାହାକୁ</label>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. ‘କାହା ମୁଖ ଅନାଇ ବଞ୍ଚିବି’ କବିତାଟି କେଉଁ କାବ୍ୟର ଅଂଶବିଶେଷ ?</h3>
+            <label class="option"><input type="radio" name="q15" value="A"> (A) ଗୋପମଙ୍ଗଳ</label>
+            <label class="option"><input type="radio" name="q15" value="B"> (B) ମଥୁରା ମଙ୍ଗଳ</label>
+            <label class="option"><input type="radio" name="q15" value="C"> (C) ଦ୍ବାରିକା ମଙ୍ଗଳ</label>
+            <label class="option"><input type="radio" name="q15" value="D"> (D) ଗୋପମଙ୍ଗଳ</label>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. ‘ମଥୁରା ମଙ୍ଗଳ’ କାବ୍ୟର ପ୍ରଣେତା କିଏ ?</h3>
+            <label class="option"><input type="radio" name="q16" value="A"> (A) ଅରକ୍ଷିତ ଦାସ</label>
+            <label class="option"><input type="radio" name="q16" value="B"> (B) ବତ୍ସା ଦାସ</label>
+            <label class="option"><input type="radio" name="q16" value="C"> (C) ଦନେଇ ଦାସ</label>
+            <label class="option"><input type="radio" name="q16" value="D"> (D) ଭକ୍ତଚରଣ ଦାସ</label>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. ମାତା ଯଶୋଦା ‘ଶ୍ୟାମଘନ’ ବୋଲି କାହାକୁ ସମ୍ବୋଧନ କରିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q17" value="A"> (A) ମେଘକୁ</label>
+            <label class="option"><input type="radio" name="q17" value="B"> (B) କୃଷ୍ଣଙ୍କୁ</label>
+            <label class="option"><input type="radio" name="q17" value="C"> (C) ବଳରାମଙ୍କୁ</label>
+            <label class="option"><input type="radio" name="q17" value="D"> (D) କଳାହାଣ୍ଡିଆ ମେଘକୁ</label>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. ‘କାହା ମୁଖ ଅନାଇ ବଞ୍ଚି’– ଏହି ଉକ୍ତିଟି ମାତା ଯଶୋଦା କାହା ଉଦ୍ଦେଶ୍ୟରେ କହିଛନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q18" value="A"> (A) ବଳରାମ</label>
+            <label class="option"><input type="radio" name="q18" value="B"> (B) ଶ୍ରୀକୃଷ୍ଣ</label>
+            <label class="option"><input type="radio" name="q18" value="C"> (C) ନନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q18" value="D"> (D) ରାଧା</label>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. ଯଶୋଦାଙ୍କ ପକ୍ଷରେ କାହାର ବିଚ୍ଛେଦ ଅସହ୍ୟ ଥିଲା ?</h3>
+            <label class="option"><input type="radio" name="q19" value="A"> (A) କୃଷ୍ଣଙ୍କର</label>
+            <label class="option"><input type="radio" name="q19" value="B"> (B) ନନ୍ଦଙ୍କର</label>
+            <label class="option"><input type="radio" name="q19" value="C"> (C) ବଳରାମଙ୍କର</label>
+            <label class="option"><input type="radio" name="q19" value="D"> (D) ରୋହିଣୀଙ୍କର</label>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. ଯଶୋଦା କୃଷ୍ଣଙ୍କୁ କେଉଁଠାକୁ ଯିବାକୁ ବାରଣ କରୁଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q20" value="A"> (A) ଦ୍ବାରିକାକୁ</label>
+            <label class="option"><input type="radio" name="q20" value="B"> (B) ମଥୁରାକୁ</label>
+            <label class="option"><input type="radio" name="q20" value="C"> (C) ହସ୍ତିନାକୁ</label>
+            <label class="option"><input type="radio" name="q20" value="D"> (D) ବାରୁଣାବନ୍ତ କୁ</label>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <h3>21. ‘ଜୀବନ’ ଅଭାବରେ କିଏ ବଞ୍ଚିପାରେ ନାହିଁ ?</h3>
+            <label class="option"><input type="radio" name="q21" value="A"> (A) କଚ୍ଛପ</label>
+            <label class="option"><input type="radio" name="q21" value="B"> (B) ମେଷ</label>
+            <label class="option"><input type="radio" name="q21" value="C"> (C) ବାଘ</label>
+            <label class="option"><input type="radio" name="q21" value="D"> (D) ନନ୍ଦ</label>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <h3>22. କଂସ କେଉଁ ରାଜ୍ୟର ରାଜା ଥିଲେ ?</h3>
+            <label class="option"><input type="radio" name="q22" value="A"> (A) ମଥୁରା</label>
+            <label class="option"><input type="radio" name="q22" value="B"> (B) ଗୋପ</label>
+            <label class="option"><input type="radio" name="q22" value="C"> (C) ଦ୍ବାରିକା</label>
+            <label class="option"><input type="radio" name="q22" value="D"> (D) ବଦ୍ରିକା</label>
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+
+<!-- Quiz Form -->
+<form id="quizForm">
+    <div class="questions">
+       
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+<div id="result"></div>
+
+<script>
+    const correctAnswers = {
+        q1: 'D', // Correct answer for question 1
+        // Add correct answers for all questions in the same format
+        q2: 'B',
+        q3: 'B',
+        q4: 'C',
+        q5: 'A',
+        q6: 'B',
+        q7: 'B',
+        q8: 'C',
+        q9: 'B',
+        q10: 'A',
+        q11: 'C',
+        q12: 'A',
+        q13: 'D',
+        q14: 'A',
+        q15: 'B',
+        q16: 'A',
+        q17: 'B',
+        q18: 'B',
+        q19: 'A',
+        q20: 'C',
+        q21: 'C',
+        q22: 'A'
+    };
+
+    document.getElementById('quizForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        let score = 0;
+        const totalQuestions = Object.keys(correctAnswers).length;
+
+        // Loop through the correct answers to calculate the score
+        for (let question in correctAnswers) {
+            const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+            if (userAnswer && userAnswer.value === correctAnswers[question]) {
+                score++;
+            }
+        }
+
+        // Display the result
+        document.getElementById('result').innerText = `Your score is ${score} out of ${totalQuestions}.`;
+    });
+</script>
+
+</body>
+</html>
+
+    </body>
+</html>
