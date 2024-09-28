@@ -1,42 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="mysite.css">
-</head>
-<body>
-	<nav class="navbar">
-		<div class="navdiv">
-			<div class="logo"><a href="#">My-site</a> </div>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-				<button><a href="class8th.html">class-8th</a></button>
-				<button><a href="class%209th.html">class-9th</a></button>
-				<button><a href="password.html">Odia Test</a></button>
-				 <button><a href="class%2010th.html">class 10th</a></button>
-			</ul>
-		</div>
-	</nav>
-    
-    <div>
-         <img class="imgs" src="download%20(1).jpg">
-        
-         <h3 class="textI">Welcome to mysite, your one-stop resource for CBSE students in Jaipatna! We offer comprehensive notes, practice questions, and a wide range of Q&A designed to help you excel in your exams. Our platform also provides access to previous years' question papers, enabling you to practice effectively and gain confidence. Whether you're looking for study material, practice tests, or expert guidance, [Your Website Name] is here to support your academic journey and help you achieve your goals.
-         </h3>
-         
-         <img class="imgss" src="download%20(2).jpg">
-        
-         <h3 class="textI">Welcome to mysite, your one-stop resource for CBSE students in Jaipatna! We offer comprehensive notes, practice questions, and a wide range of Q&A designed to help you excel in your exams. Our platform also provides access to previous years' question papers, enabling you to practice effectively and gain confidence. Whether you're looking for study material, practice tests, or expert guidance, [Your Website Name] is here to support your academic journey and help you achieve your goals.
-         </h3>
-    </div>
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="mysite.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;display=swap" rel="stylesheet"> <!-- Adding a font --> 
+  <title>SSVT</title> 
+ </head> 
+ <body> 
+  <nav class="navbar"> 
+   <div class="navdiv"> 
+       <img class="logoimg" src="ssvt%20logo.jpg"> 
+    <div class="logo"> <a href="#" class="logo-text">SSVT</a> 
+    </div> 
+    <div class="toggle" id="toggle-btn"> <span></span> <span></span> <span></span> 
+    </div> 
+    <ul id="nav-links"> 
+     <li><a href="index.html">Home</a></li> 
+     <li><a href="#about">About</a></li> 
+     <li><a href="#contact">Contact</a></li> 
+     <li><a href="#resources">Resources</a></li> 
+     <li><button><a href="class8th.html">class-8th</a></button></li> 
+     <li><button><a href="class%209th.html">class-9th</a></button></li> 
+     <li><button><a href="password.html">Odia Test</a></button></li> 
+     <li><button><a href="class%2010th.html">class 10th</a></button></li> 
+    </ul> 
+   </div> 
+  </nav> 
+  <div id="about"> 
+   <img class="imgs" src="download%20(1).jpg" alt="About Image"> 
+   <h3 class="textI">Welcome to mysite, your one-stop resource for CBSE students in Jaipatna! We offer comprehensive notes, practice questions, and a wide range of Q&amp;A designed to help you excel in your exams. Our platform also provides access to previous years' question papers, enabling you to practice effectively and gain confidence. Whether you're looking for study material, practice tests, or expert guidance, [Your Website Name] is here to support your academic journey and help you achieve your goals.</h3> 
+  </div> 
+  <div id="resources"> 
+   <img class="imgss" src="download%20(2).jpg" alt="Resources Image"> 
+   <h3 class="textI">Welcome to mysite, your one-stop resource for CBSE students in Jaipatna! We offer comprehensive notes, practice questions, and a wide range of Q&amp;A designed to help you excel in your exams. Our platform also provides access to previous years' question papers, enabling you to practice effectively and gain confidence. Whether you're looking for study material, practice tests, or expert guidance, [Your Website Name] is here to support your academic journey and help you achieve your goals.</h3> 
+  </div> 
+  <footer>
+    About 
+   <br> © All rights are reserved 2050 
+   <br> Follow on GitHub for more 
+  </footer> 
+  <script>
+        const toggleButton = document.getElementById('toggle-btn');
+        const navLinks = document.getElementById('nav-links');
 
-    <footer> 
-        About<br>
-        &copy; All rights are reserved 2050<br>
-        Follow on GitHub for more
-    </footer>
-</body>
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script> 
+ </body>
 </html>
