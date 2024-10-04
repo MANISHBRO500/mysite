@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCQ Quiz</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -46,6 +47,27 @@
             margin-right: 10px;
         }
 
+     
+        .option.wrong {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+       
+        .option.correct {
+            color: green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        
         button {
             background-color: #333;
             color: white;
@@ -60,9 +82,25 @@
             background-color: #555;
         }
 
-        .result {
-            margin-top: 20px;
-            font-size: 18px;
+      
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .option {
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -71,10 +109,10 @@
     <h1>MCQ Quiz</h1>
 
     <div class="container" id="quiz">
-        
-        <!-- Question 1 -->
+
+       
         <div class="question">
-            <h3>1. କୃଷ୍ଣ ତାଙ୍କ ପିତାଙ୍କୁ କ’ଣ ମାଗନ୍ତି ?</h3>
+   <h3>1. କୃଷ୍ଣ ତାଙ୍କ ପିତାଙ୍କୁ କ’ଣ ମାଗନ୍ତି ?</h3>
             <label class="option"><input type="radio" name="q1" value="A"> (A) ପୋଖରୀର ପଦ୍ମ</label>
             <label class="option"><input type="radio" name="q1" value="B"> (B) ନବନୀତ</label>
             <label class="option"><input type="radio" name="q1" value="C"> (C) ଆକାଶର ଚନ୍ଦ୍ର</label>
@@ -269,73 +307,42 @@
             <label class="option"><input type="radio" name="q22" value="D"> (D) ବଦ୍ରିକା</label>
         </div>
     </div>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-</head>
-<body>
 
-<!-- Quiz Form -->
-<form id="quizForm">
-    <div class="questions">
-       
-        <input type="submit" value="Submit">
-    </div>
-</form>
+        <button onclick="submitQuiz()">Submit</button>
 
-<div id="result"></div>
+        <div class="result" id="result"></div>
+    
 
-<script>
-    const correctAnswers = {
-        q1: 'D', // Correct answer for question 1
-        // Add correct answers for all questions in the same format
-        q2: 'B',
-        q3: 'B',
-        q4: 'C',
-        q5: 'A',
-        q6: 'B',
-        q7: 'B',
-        q8: 'C',
-        q9: 'B',
-        q10: 'A',
-        q11: 'C',
-        q12: 'A',
-        q13: 'D',
-        q14: 'A',
-        q15: 'B',
-        q16: 'A',
-        q17: 'B',
-        q18: 'B',
-        q19: 'A',
-        q20: 'C',
-        q21: 'C',
-        q22: 'A'
-    };
+    <script>
+        function submitQuiz() {
+            const totalQuestions = 23;
+            let score = 0;
 
-    document.getElementById('quizForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
+            
+            const correctAnswers = [
+                "B", "A", "C", "A", "B", "A", "C", "A", "C", "C",
+                "C", "A", "C", "C", "A", "B", "A", "D", "B", "C",
+                "C", "A", "C", "A"
+            ];
 
-        let score = 0;
-        const totalQuestions = Object.keys(correctAnswers).length;
-
-        // Loop through the correct answers to calculate the score
-        for (let question in correctAnswers) {
-            const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
-            if (userAnswer && userAnswer.value === correctAnswers[question]) {
-                score++;
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const answerValue = selectedOption.value;
+                    if (answerValue === correctAnswers[i - 1]) {
+                        score++;
+                        selectedOption.parentElement.classList.add('correct');
+                    } else {
+                        selectedOption.parentElement.classList.add('wrong');
+                    }
+                }
             }
+
+            
+            const result = document.getElementById('result');
+            result.textContent = `Your score is ${score} out of ${totalQuestions}`;
         }
-
-        // Display the result
-        document.getElementById('result').innerText = `Your score is ${score} out of ${totalQuestions}.`;
-    });
-</script>
-
+    </script>
 </body>
-</html>
-
-    </body>
 </html>
