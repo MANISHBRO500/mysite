@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .option input {
+            margin-right: 10px;
+        }
+
+     
+        .option.wrong {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+       
+        .option.correct {
+            color: green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+      
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .option {
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MCQ Quiz</h1>
+
+    <div class="container" id="quiz">
+
+       
+        <div class="question"> 
+            
+             <h3>1. ଉତ୍କଳର ବନଭୂମି କିପରି ବୋଲି ପଠିତ କବିତାରେ କୁହାଯାଇଛି ?</h3>
+            <label class="option"><input type="radio" name="q1" value="A"> (A) ତାଳ ତମାଳ ବୃକ୍ଷପୂର୍ଣ</label>
+            <label class="option"><input type="radio" name="q1" value="B"> (B) ଘଞ୍ଚ</label>
+            <label class="option"><input type="radio" name="q1" value="C"> (C) ବନ୍ଯଜନ୍ତୁପୂର୍ଣ</label>
+            <label class="option"><input type="radio" name="q1" value="D"> (D) ଯୋଗୀଋଷିଙ୍କର ବାସସ୍ଥଳୀ</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2.2. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ କବିତାର କବି କିଏ ?</h3>
+            <label class="option"><input type="radio" name="q2" value="A"> (A) ରାଧାନାଥ ରାୟ</label>
+            <label class="option"><input type="radio" name="q2" value="B"> (B) ଗୋଦାବରୀଶ ମହାପାତ୍ର</label>
+            <label class="option"><input type="radio" name="q2" value="C"> (C) ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର</label>
+            <label class="option"><input type="radio" name="q2" value="D"> (D) କୁନ୍ତଳାକୁମାରୀ ସାବତ</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. ଲକ୍ଷ୍ମୀକାନ୍ତ ମହାପାତ୍ର କେଉଁ କବି ରୂପେ ସୁପରିଚିତ ?</h3>
+            <label class="option"><input type="radio" name="q3" value="A"> (A) କାନ୍ତକବି</label>
+            <label class="option"><input type="radio" name="q3" value="B"> (B) ପଲ୍ଲୀକବି</label>
+            <label class="option"><input type="radio" name="q3" value="C">(C) ବ୍ୟଙ୍ଗକବି</label>
+            <label class="option"><input type="radio" name="q3" value="D"> (D) ଆଶୁକବି</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4.‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ କେଉଁ ଭାବନାର ଏକ ମନୋଜ୍ଞ କୃତି ?</h3>
+            <label class="option"><input type="radio" name="q4" value="A"> (A) ପଲ୍ଲୀ ଭାବନା</label>
+            <label class="option"><input type="radio" name="q4" value="B"> (B) ଦେଶାତ୍ମବୋଧ ଭାବନା</label>
+            <label class="option"><input type="radio" name="q4" value="C"> (C) ଭାରତ ଭାବନା</label>
+            <label class="option"><input type="radio" name="q4" value="D"> (D) ପ୍ରକୃତି ଭାବନା</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. ‘ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ’ ଓଡ଼ିଶା ସରକାରଙ୍କଦ୍ବାରା କେଉଁ ମସିହାରେ ରାଜ୍ୟ ସଙ୍ଗୀତର ମାନ୍ୟତା ଲାଭକରିଛି ?</h3>
+            <label class="option"><input type="radio" name="q5" value="A"> (A) 1090</label>
+            <label class="option"><input type="radio" name="q5" value="B"> (B) 1010</label>
+            <label class="option"><input type="radio" name="q5" value="C">(C) 1019</label>
+            <label class="option"><input type="radio" name="q5" value="D">  (D) 1098</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. ପ୍ରକୃତି ପରିଶୋଭିତ ଉତ୍କଳ ଜନନୀଙ୍କ କେଉଁଟି ସୁନ୍ଦର ?</h3>
+            <label class="option"><input type="radio" name="q6" value="A">  (A) ରୂପ ଓ ଗୁଣ</label>
+            <label class="option"><input type="radio" name="q6" value="B"> (B) ଐତିହ୍ୟ ଓ ମାଧୁର୍ଯ୍ୟ</label>
+            <label class="option"><input type="radio" name="q6" value="C"> (C) ହସ ଓ ଭାଷା</label>
+            <label class="option"><input type="radio" name="q6" value="D"> (D) ପ୍ରକୃତି ଓ ଐଶ୍ୱର୍ଯ୍ୟ</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. ଅରିକୁଳ ଚର୍ଚ୍ଚିତ ଦେହା (ପଦ୍ୟାନୁଯାୟୀ ପଡ୍‌କ୍ତି ପୂରଣ କର ।)</h3>
+            <label class="option"><input type="radio" name="q7" value="A">(A) ଶୋଣିତ</label>
+            <label class="option"><input type="radio" name="q7" value="B"> (B) คติด</label>
+            <label class="option"><input type="radio" name="q7" value="C">(C) ଘୋଷିତ</label>
+            <label class="option"><input type="radio" name="q7" value="D"> (D) ଶୋଭିତ</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. ପୂତ ବିଧୌତ ଶରୀର</h3>
+            <label class="option"><input type="radio" name="q8" value="A">  (A) ଜଳଧ୍</label>
+            <label class="option"><input type="radio" name="q8" value="B"> (B) ବାରିଧ୍</label>
+            <label class="option"><input type="radio" name="q8" value="C"> (C) ପୟୋଧ</label>
+            <label class="option"><input type="radio" name="q8" value="D"> (D) ଉଦଧ୍</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3> 9. ଉତ୍କଳର ତଟ ପ୍ରଦେଶ କେଉଁ ବୃକ୍ଷରାଜିରେ ସୁଶୋଭିତ ?</h3>
+            <label class="option"><input type="radio" name="q9" value="A">  (A) ଆମ୍ବ ଓ ନଡ଼ିଆ</label>
+            <label class="option"><input type="radio" name="q9" value="B">  (B) ନାରୀକେଳ ଓ ଗୁବାକ</label>
+            <label class="option"><input type="radio" name="q9" value="C">(C) ତାଳ ଓ ତମାଳ</label>
+            <label class="option"><input type="radio" name="q9" value="D"> (D) ପଣସ ଓ ବର</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. ସମୁଦ୍ରର ପବିତ୍ର ଜଳଧାରା ଉତ୍କଳ ଜନନୀଙ୍କ କେଉଁଠିକୁ ଧୋଇଦିଏ ?</h3>
+            <label class="option"><input type="radio" name="q10" value="A">  (A) ଶରୀର</label>
+            <label class="option"><input type="radio" name="q10" value="B"> (B) ପାଦ</label>
+            <label class="option"><input type="radio" name="q10" value="C"> (C) คขเ</label>
+            <label class="option"><input type="radio" name="q10" value="D"> (D) 모임</label>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+            <h3>11. ଉତ୍କଳର କେଉଁ ଜଳ ଧାରଣ କରିଥିବା ନ‌ଦୀତଟରେ ଶୀତଳ ପବନ ପ୍ରବାହିତ ହୋଇଥାଏ ?</h3>
+            <label class="option"><input type="radio" name="q11" value="A"> (A) ଆବିଳ</label>
+            <label class="option"><input type="radio" name="q11" value="B">  (B) ସ୍ବଚ୍ଛ</label>
+            <label class="option"><input type="radio" name="q11" value="C"> (C) କାନରେ</label>
+            <label class="option"><input type="radio" name="q11" value="D"> (D) ଫେନିଳ</label>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+            <h3>12. ଉତ୍କଳ ଜନନୀଙ୍କ ଶରୀର କେଉଁଥିରେ ପରିଶୋଭିତ ?</h3>
+            <label class="option"><input type="radio" name="q12" value="A"> (A) ତାଳତମାଳ</label>
+            <label class="option"><input type="radio" name="q12" value="B"> (B) ଘଞ୍ଚ ବନଭୂମି</label>
+            <label class="option"><input type="radio" name="q12" value="C"> (C) ନଦୀନାଳ</label>
+            <label class="option"><input type="radio" name="q12" value="D"> (D) ବନପର୍ବତ</label>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+            <h3>13. ନୀଳ ତରଙ୍ଗ ଆକାରରେ ପ୍ରକାଶ ପାଇଥାଏ ।</h3>
+            <label class="option"><input type="radio" name="q13" value="A">(A) ପର୍ବତମାଳା</label>
+            <label class="option"><input type="radio" name="q13" value="B"> (B) ସମୁଦ୍ର</label>
+            <label class="option"><input type="radio" name="q13" value="C"> (C) ନଦୀ</label>
+            <label class="option"><input type="radio" name="q13" value="D"> (D)  ଆକାଶ</label>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+            <h3>14. ଉତ୍କଳ ଜନନୀଙ୍କ ସୁନ୍ଦର ଆକାଶ ଶ କାହାର କଳକଳ ରାବରେ ମୁଖରିତ ହୋଇଥାଏ ?</h3>
+            <label class="option"><input type="radio" name="q14" value="A"> (A) ପଶୁମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q14" value="B"> (B) ଜୀବଜନ୍ତୁମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q14" value="C"> (C) ପକ୍ଷୀମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q14" value="D"> (D) ଝରଣାମାନଙ୍କ</label>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+            <h3>15. କେଉଁଥିରେ ଉତ୍କଳର ଶସ୍ୟକ୍ଷେତ୍ର ପରିପୂର୍ଣ ?</h3>
+            <label class="option"><input type="radio" name="q15" value="A"> (A) ଗହମରେ</label>
+            <label class="option"><input type="radio" name="q15" value="B"> (B) ଫୁଲ ଫୁଲରେ</label>
+            <label class="option"><input type="radio" name="q15" value="C"> (C) ଫଳରେ</label>
+            <label class="option"><input type="radio" name="q15" value="D"> (D) ଧାନରେ</label>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+            <h3>16. ଉତ୍କଳର ଚକ୍ଷୁ ନିମ୍ନୋକ୍ତ କେଉଁ ପ୍ରଦର୍ଶନରେ ଉଭାସିତ ?</h3>
+            <label class="option"><input type="radio" name="q16" value="A">  (A) ଜ୍ଞାନବିଜ୍ଞାନ</label>
+            <label class="option"><input type="radio" name="q16" value="B"> (B) ସୁଖଶାନ୍ତି</label>
+            <label class="option"><input type="radio" name="q16" value="C">(C) ଧନସମ୍ପଦ</label>
+            <label class="option"><input type="radio" name="q16" value="D"> (D) ପ୍ରେମଆନନ୍ଦ</label>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+            <h3>17. ବହୁ ଯୋଗୀଋଷିଙ୍କ ଦ୍ଵାରା ଉତ୍କଳ ଜନନୀ ପବିତ୍ର ।</h3>
+            <label class="option"><input type="radio" name="q17" value="A"> (A) ଜ୍ଞାନ</label>
+            <label class="option"><input type="radio" name="q17" value="B"> (B) ତପସ୍ୟା</label>
+            <label class="option"><input type="radio" name="q17" value="C"> (C) କୁଟୀର</label>
+            <label class="option"><input type="radio" name="q17" value="D"> (D) ଓଁକାର ଧ୍ବନି</label>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+            <h3>18. କାହାଦ୍ୱାରା ଉତ୍କଳର ମନ୍ଦିର ସୁଶୋଭିତ ?</h3>
+            <label class="option"><input type="radio" name="q18" value="A"> (A) କାରୁକଳା</label>
+            <label class="option"><input type="radio" name="q18" value="B"> (B) ଚାରୁକଳା</label>
+            <label class="option"><input type="radio" name="q18" value="C"> (C) ଶିଳ୍ପକଳା</label>
+            <label class="option"><input type="radio" name="q18" value="D"> (D) ପ୍ରସ୍ତରକଳା</label>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+            <h3>19. ଉତ୍କଳ ପ୍ରଦେଶରେ ଅନେକ ପୁଣ୍ୟ କେଉଁଠାରେ ପରିପୂର୍ଣ ?</h3>
+            <label class="option"><input type="radio" name="q19" value="A">  (A) ନଦୀ</label>
+            <label class="option"><input type="radio" name="q19" value="B"> (B) ସମୁଦ୍ର</label>
+            <label class="option"><input type="radio" name="q19" value="C"> (C) ศคิด</label>
+            <label class="option"><input type="radio" name="q19" value="D"> (D) ดาย์</label>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+            <h3>20. ବୀର ଯୋଦ୍ଧାଙ୍କର ଉତ୍କଳ ଭୂମି କେଉଁ ଭୂମି ସଦୃଶ ?</h3>
+            <label class="option"><input type="radio" name="q20" value="A"> (A) ତୀର୍ଥଭୂମି</label>
+            <label class="option"><input type="radio" name="q20" value="B"> (B) ପୁଣ୍ୟଭୂମି</label>
+            <label class="option"><input type="radio" name="q20" value="C">(C) ରଣଭୂମି</label>
+            <label class="option"><input type="radio" name="q20" value="D">(D) ବାସଭୂମି</label>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+            <h3>21. କେଉଁମାନଙ୍କ ଦେହରେ ଉତ୍କଳ ଜନନୀଙ୍କ ଦେହ ଅନୁରଞ୍ଜିତ ହୋଇଛି ?</h3>
+            <label class="option"><input type="radio" name="q21" value="A"> (A) ବୀରମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q21" value="B"> (B) ଶତ୍ରୁମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q21" value="C"> (C) ମିତ୍ରମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q21" value="D"> (D) ପଡୋ ଡାଶୀଙ୍କ</label>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+            <h3>22. ନୀଳ ଭୂ-ରମାଳା ଉତ୍କଳ ଜନନୀର ବନ୍ଧ ର ବକ୍ଷରେ କିପରି ଶୋଭା ପାଆନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q22" value="A"> (A) ଆକାଶ ସଦୃଶ</label>
+            <label class="option"><input type="radio" name="q22" value="B"> (B) ସମୁଦ୍ର ସଦୃଶ</label>
+            <label class="option"><input type="radio" name="q22" value="C">(C) ତରଙ୍ଗ ସଦୃଶ</label>
+            <label class="option"><input type="radio" name="q22" value="D"> (D) ତମାଳବୃକ୍ଷ ସଦୃଶ</label>
+        </div>
+        <!-- Question 23 -->
+        <div class="question">
+            <h3>21. କେଉଁମାନଙ୍କ ଦେହରେ ଉତ୍କଳ ଜନନୀଙ୍କ ଦେହ ଅନୁରଞ୍ଜିତ ହୋଇଛି ?</h3>
+            <label class="option"><input type="radio" name="q21" value="A"> (A) ବୀରମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q21" value="B"> (B) ଶତ୍ରୁମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q21" value="C"> (C) ମିତ୍ରମାନଙ୍କ</label>
+            <label class="option"><input type="radio" name="q21" value="D"> (D) ପଡୋ ଡାଶୀଙ୍କ</label>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+            <h3>22. ନୀଳ ଭୂ-ରମାଳା ଉତ୍କଳ ଜନନୀର ବନ୍ଧ ର ବକ୍ଷରେ କିପରି ଶୋଭା ପାଆନ୍ତି ?</h3>
+            <label class="option"><input type="radio" name="q22" value="A"> (A) ଆକାଶ ସଦୃଶ</label>
+            <label class="option"><input type="radio" name="q22" value="B"> (B) ସମୁଦ୍ର ସଦୃଶ</label>
+            <label class="option"><input type="radio" name="q22" value="C">(C) ତରଙ୍ଗ ସଦୃଶ</label>
+            <label class="option"><input type="radio" name="q22" value="D"> (D) ତମାଳବୃକ୍ଷ ସଦୃଶ</label>
+        </div>
+    </div>
+
+        <button onclick="submitQuiz()">Submit</button>
+
+        <div class="result" id="result"></div>
+    
+
+    <script>
+        function submitQuiz() {
+            const totalQuestions = 22;
+            let score = 0;
+
+            
+            const correctAnswers = [
+                "A", "C", "A", "B", "C", "B", "C", "D", "B", "B",
+                "C", "B", "B", "C", "D", "A", "B", "C", "A", "C",
+                "A", "A", "D", "B"
+            ];
+
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const answerValue = selectedOption.value;
+                    if (answerValue === correctAnswers[i - 1]) {
+                        score++;
+                        selectedOption.parentElement.classList.add('correct');
+                    } else {
+                        selectedOption.parentElement.classList.add('wrong');
+                    }
+                }
+            }
+
+            
+            const result = document.getElementById('result');
+            result.textContent = `Your score is ${score} out of ${totalQuestions}`;
+        }
+    </script>
+</body>
+</html>
