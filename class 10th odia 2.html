@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .option input {
+            margin-right: 10px;
+        }
+
+     
+        .option.wrong {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+       
+        .option.correct {
+            color: green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+      
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .option {
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MCQ Quiz</h1>
+
+    <div class="container" id="quiz">
+
+       
+        <div class="question"> 
+            
+            
+        <div class="question">
+            <h3>1. ବିଶ୍ୱନାଥଙ୍କୁ ସିଂଘନାଦ ମାଗିବାପାଇଁ କିଏ ଭୀମଙ୍କୁ ନିର୍ଦ୍ଦେଶ ଦେଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q1" value="A"> (A) ଗୋବିନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q1" value="B"> (B) ଯୁଧୁଷ୍ଠିର</label>
+                <label class="option"><input type="radio" name="q1" value="C"> (C) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q1" value="D"> (D) ସହଦେବ</label>
+             
+        </div>
+        <div class="question">
+            <h3>2. ଭୀମଙ୍କ ଧାନରେ କାହାର ଆସନ କମ୍ପି ଉଠିଥିଲା?</h3>
+             
+            <label class="option"><input type="radio" name="q2" value="A"> (A) ବ୍ରହ୍ମା</label>
+            <label class="option"><input type="radio" name="q2" value="B"> (B) ଶିବ</label>
+            <label class="option"><input type="radio" name="q2" value="C"> (C) ବିଷ୍ଣୁ</label>
+            <label class="option"><input type="radio" name="q2" value="D"> (D) ସୂର୍ଯ୍ୟ</label>
+             
+        </div>
+        <div class="question">
+            <h3>3. ଭୀମଙ୍କୁ ବର ଦେବାପାଇଁ ଈଶ୍ୱର କାଁହାର ପରାମର୍ଶ ଲୋଡ଼ିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q3" value="A"> (A) କାଳୀ</label>
+            <label class="option"><input type="radio" name="q3" value="B"> (B) ଲକ୍ଷ୍ମୀ</label>
+            <label class="option"><input type="radio" name="q3" value="C"> (C) ପାର୍ବତୀ</label>
+            <label class="option"><input type="radio" name="q3" value="D"> (D) ସରସ୍ବତୀ</label>
+             
+        </div>
+        <div class="question">
+            <h3>4. ବିପଦ ସମୟରେ ଶିବଙ୍କ କୈଳାସ ପର୍ବତକୁ କିଏ ଉଦ୍ଧାର କରିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q4" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q4" value="B"> (B) ଶ୍ରୀକୃଷ୍ଣ</label>
+            <label class="option"><input type="radio" name="q4" value="C"> (C) ମହାଲକ୍ଷ୍ମୀ</label>
+            <label class="option"><input type="radio" name="q4" value="D"> (D) ବିଷ୍ଣୁ</label>
+             
+        </div>
+        <div class="question">
+            <h3>5. ତ୍ରିପୁରାରି କିଏ?</h3>
+             
+            <label class="option"><input type="radio" name="q5" value="A"> (A) ବ୍ରହ୍ମା</label>
+            <label class="option"><input type="radio" name="q5" value="B"> (B) ଶିବ</label>
+            <label class="option"><input type="radio" name="q5" value="C"> (C) ବିଷ୍ଣୁ</label>
+            <label class="option"><input type="radio" name="q5" value="D"> (D) ଇନ୍ଦ୍ର</label>
+             
+        </div>
+        <div class="question">
+            <h3>6. ଈଶ୍ବରଙ୍କଠାରୁ ଭୀମ ସିଂଘନାଦ ମାଗନ୍ତୁ ବୋଲି ଜଗନ୍ନାଥଙ୍କୁ କିଏ ନିବେଦନ କରିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q6" value="A"> (A) ଶିବ</label>
+            <label class="option"><input type="radio" name="q6" value="B"> (B) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q6" value="C"> (C) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q6" value="D"> (D) ଅର୍ଜୁନ</label>
+             
+        </div>
+        <div class="question">
+            <h3>7. କେତେଥର ଶବ୍ଦ ସୃଷ୍ଟି କରିବାକୁ ଶିବ ସିଂଘନାଦକୁ ଆଦେଶ ଦେଇଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q7" value="A"> (A) ଏକଥର</label>
+            <label class="option"><input type="radio" name="q7" value="B"> (B) ଚାରିଥର</label>
+            <label class="option"><input type="radio" name="q7" value="C"> (C) ସାତଥର</label>
+            <label class="option"><input type="radio" name="q7" value="D"> (D) ଆଠଥର</label>
+             
+        </div>
+        <div class="question">
+            <h3>8. ସିଂଘନାଦର ଶବ୍ଦ ଶୁଣି କାହାର ନିଦ୍ରା ଭଗ୍ନ ହେଲା?</h3>
+             
+            <label class="option"><input type="radio" name="q8" value="A"> (A) ମାନଗୋବିନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q8" value="B"> (B) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q8" value="C"> (C) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q8" value="D"> (D) ଅର୍ଜୁନ</label>
+             
+        </div>
+        <div class="question">
+            <h3>9. ଭୀମର ଭୟଙ୍କର ଶବ୍ଦରେ ଲକ୍ଷ୍ମୀଙ୍କ କୋଳ ତ୍ୟାଗ କରି କିଏ ଗର୍ଜି ଉଠିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q9" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q9" value="B"> (B) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q9" value="C"> (C) ଶ୍ରୀକୃଷ୍ଣ</label>
+            <label class="option"><input type="radio" name="q9" value="D"> (D) ଦୁର୍ଯ୍ୟୋଧନ</label>
+             
+        </div>
+        <div class="question">
+            <h3>10. ‘ରାଜା ଧୃତିରାଷ୍ଟି’ କିଏ?</h3>
+             
+            <label class="option"><input type="radio" name="q10" value="A"> (A) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q10" value="B"> (B) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q10" value="C"> (C) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q10" value="D"> (D) ଭୀମ</label>
+             
+        </div>
+        <div class="question">
+            <h3>11. ଦୁର୍ଯ୍ୟୋଧନ ଉତ୍ତେଜିତ ହେବା ସମୟରେ ତାଙ୍କୁ କିଏ ଭିଡ଼ି ଧରିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q11" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q11" value="B"> (B) ଶ୍ରୀକୃଷ୍ଣ</label>
+            <label class="option"><input type="radio" name="q11" value="C"> (C) ମହାଲକ୍ଷ୍ମୀ</label>
+            <label class="option"><input type="radio" name="q11" value="D"> (D) ଯୁଧୁଷ୍ଠିର</label>
+             
+        </div>
+        <div class="question">
+            <h3>12. ମାନଗୋବିନ୍ଦ ନାମରେ କିଏ ପରିଚିତ?</h3>
+             
+            <label class="option"><input type="radio" name="q12" value="A"> (A) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q12" value="B"> (B) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q12" value="C"> (C) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q12" value="D"> (D) ସହଦେବ</label>
+             
+        </div>
+        <div class="question">
+            <h3>13. ଭୀମଙ୍କ ଦ୍ବିତୀୟ ରଡ଼ିରେ କଦଳୀପତ୍ର ପରି କିଏ କମ୍ପୁଥିଲେ?</h3>
+             
+                <label class="option"><input type="radio" name="q13" value="A"> (A) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q13" value="B"> (B) ବିଷ୍ଣୁ</label>
+            <label class="option"><input type="radio" name="q13" value="C"> (C) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q13" value="D"> (D) ସୂର୍ଯ୍ୟ</label>
+             
+        </div>
+        <div class="question">
+            <h3>14. ଭୀମର ଦ୍ବିତୀୟ ସିଂଘନାଦ ରଡ଼ିରେ କେତେ ଯୋଜନ ପର୍ଯ୍ୟନ୍ତ ଆକାଶ କମ୍ପି ଉଠିଲା?</h3>
+             
+                <label class="option"><input type="radio" name="q14" value="A"> (A) ଚାରି ଲକ୍ଷ</label>
+            <label class="option"><input type="radio" name="q14" value="B"> (B) ଛଅ ଲକ୍ଷ</label>
+                <label class="option"><input type="radio" name="q14" value="C"> (C) ପାଞ୍ଚ ଲକ୍ଷ</label>
+            <label class="option"><input type="radio" name="q14" value="D"> (D) ସାତ ଲକ୍ଷ</label>
+             
+        </div>
+        <div class="question">
+            <h3>15. ଭୀମର କେତେଥର ରଡ଼ି ସହିବାକୁ ଦୁର୍ଯ୍ୟୋଧନ ଲକ୍ଷ୍ମୀଙ୍କ ଆଗରେ ପ୍ରତିଜ୍ଞା କରିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q15" value="A"> (A) ଛଅଥର</label>
+            <label class="option"><input type="radio" name="q15" value="B"> (B) ଚାରିଥର</label>
+            <label class="option"><input type="radio" name="q15" value="C"> (C) ସାତଥର</label>
+            <label class="option"><input type="radio" name="q15" value="D"> (D) ଆଠଥର</label>
+             
+        </div>
+        <div class="question">
+            <h3>16. କାହା ଗଦାର ଓଜନ ସତୁରି ଭାର ଥିଲା?</h3>
+             
+            <label class="option"><input type="radio" name="q16" value="A"> (A) ଭୀମର ଗଦା</label>
+                <label class="option"><input type="radio" name="q16" value="B"> (B) ବଳରାମଙ୍କ ଗଦା</label>
+                <label class="option"><input type="radio" name="q16" value="C"> (C) ଦୁର୍ଯ୍ୟୋଧନର ଗଦା</label>
+                <label class="option"><input type="radio" name="q16" value="D"> (D) ଜରାସନ୍ଧର ଗଦା</label>
+             
+        </div>
+        <div class="question">
+            <h3>17. ଦୁର୍ଯ୍ୟୋଧନ କାହାକୁ ‘‘ପଳା ଯା’’ ବୋଲି କହିଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q17" value="A"> (A) ପାର୍ବତୀ</label>
+            <label class="option"><input type="radio" name="q17" value="B"> (B) ଲକ୍ଷ୍ମୀ</label>
+            <label class="option"><input type="radio" name="q17" value="C"> (C) ଗାନ୍ଧାରୀ</label>
+            <label class="option"><input type="radio" name="q17" value="D"> (D) ଦ୍ରୌପଦୀ</label>
+             
+        </div>
+        <div class="question">
+            <h3>18. ସାରଳା ଦାସ ମହାଭାରତ ରଚନା କରିବା ସମୟରେ କିଏ ଓଡ଼ିଶାର ଗଜପତି ଥିଲେ?</h3>
+             
+            <label class="option"><input type="radio" name="q18" value="A"> (A) କପିଳେନ୍ଦ୍ର ଦେବ</label>
+            <label class="option"><input type="radio" name="q18" value="B"> (B) କୃଷ୍ଣଚନ୍ଦ୍ର ଦେବ</label>
+            <label class="option"><input type="radio" name="q18" value="C"> (C) ନରସିଂହ ଦେବ</label>
+            <label class="option"><input type="radio" name="q18" value="D"> (D) କୌଣସିଟି ନୁହେଁ</label>
+            
+        </div>
+        <div class="question">
+            <h3>19. ସିଂଘନାଦର ଶବ୍ଦ ଶୁଣି କାହାର ନିଦ୍ରା ଭଗ୍ନ ହେଲା?</h3>
+             
+            <label class="option"><input type="radio" name="q19" value="A"> (A) ମାନଗୋବିନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q19" value="B"> (B) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q19" value="C"> (C) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q19" value="D"> (D) ଅର୍ଜୁନ</label>
+        </div>
+
+        </div>
+        <button onclick="submitQuiz()">Submit</button>
+
+        <div class="result" id="result"></div>
+    
+
+    <script>
+        function submitQuiz() {
+            const totalQuestions = 22;
+            let score = 0;
+
+            
+            const correctAnswers = [
+                 "A", "B", "C", "C", "B", "C", "D", "A", "D", "D",
+                "C", "B", "A", "B", "B", "C", "C", "B", "A",
+            ];
+
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const answerValue = selectedOption.value;
+                    if (answerValue === correctAnswers[i - 1]) {
+                        score++;
+                        selectedOption.parentElement.classList.add('correct');
+                    } else {
+                        selectedOption.parentElement.classList.add('wrong');
+                    }
+                }
+            }
+
+            
+            const result = document.getElementById('result');
+            result.textContent = `Your score is ${score} out of ${totalQuestions}`;
+        }
+    </script>
+</body>
+</html>
