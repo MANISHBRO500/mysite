@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .option input {
+            margin-right: 10px;
+        }
+
+     
+        .option.wrong {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+       
+        .option.correct {
+            color: green;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+      
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .option {
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MCQ Quiz</h1>
+
+    <div class="container" id="quiz">
+
+       
+      
+        <div class="question">
+            <h3>1. ବିଶ୍ୱନାଥଙ୍କୁ ସିଂଘନାଦ ମାଗିବାପାଇଁ କିଏ ଭୀମଙ୍କୁ ନିର୍ଦ୍ଦେଶ ଦେଲେ?</h3>
+            <label class="option"><input type="radio" name="q1" value="A"> (A) ଗୋବିନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q1" value="B"> (B) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q1" value="C"> (C) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q1" value="D"> (D) ସହଦେବ</label>
+        </div>
+        <div class="question">
+            <h3>2. ଭୀମଙ୍କ ଧାନରେ କାହାର ଆସନ କମ୍ପି ଉଠିଥିଲା?</h3>
+            <label class="option"><input type="radio" name="q2" value="A"> (A) ବ୍ରହ୍ମା</label>
+            <label class="option"><input type="radio" name="q2" value="B"> (B) ଶିବ</label>
+            <label class="option"><input type="radio" name="q2" value="C"> (C) ବିଷ୍ଣୁ</label>
+            <label class="option"><input type="radio" name="q2" value="D"> (D) ସୂର୍ଯ୍ୟ</label>
+        </div>
+        <div class="question">
+            <h3>3. ଭୀମଙ୍କୁ ବର ଦେବାପାଇଁ ଈଶ୍ୱର କାଁହାର ପରାମର୍ଶ ଲୋଡ଼ିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q3" value="A"> (A) କାଳୀ</label>
+            <label class="option"><input type="radio" name="q3" value="B"> (B) ଲକ୍ଷ୍ମୀ</label>
+            <label class="option"><input type="radio" name="q3" value="C"> (C) ପାର୍ବତୀ</label>
+            <label class="option"><input type="radio" name="q3" value="D"> (D) ସରସ୍ବତୀ</label>
+        </div>
+        <div class="question">
+            <h3>4. ବିପଦ ସମୟରେ ଶିବଙ୍କ କୈଳାସ ପର୍ବତକୁ କିଏ ଉଦ୍ଧାର କରିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q4" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q4" value="B"> (B) ଶ୍ରୀକୃଷ୍ଣ</label>
+            <label class="option"><input type="radio" name="q4" value="C"> (C) ମହାଲକ୍ଷ୍ମୀ</label>
+            <label class="option"><input type="radio" name="q4" value="D"> (D) ବିଷ୍ଣୁ</label>
+        </div>
+        <div class="question">
+            <h3>5. ତ୍ରିପୁରାରି କିଏ?</h3>
+            <label class="option"><input type="radio" name="q5" value="A"> (A) ବ୍ରହ୍ମା</label>
+            <label class="option"><input type="radio" name="q5" value="B"> (B) ଶିବ</label>
+            <label class="option"><input type="radio" name="q5" value="C"> (C) ବିଷ୍ଣୁ</label>
+            <label class="option"><input type="radio" name="q5" value="D"> (D) ଇନ୍ଦ୍ର</label>
+        </div>
+        <div class="question">
+            <h3>6. ଈଶ୍ବରଙ୍କଠାରୁ ଭୀମ ସିଂଘନାଦ ମାଗନ୍ତୁ ବୋଲି ଜଗନ୍ନାଥଙ୍କୁ କିଏ ନିବେଦନ କରିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q6" value="A"> (A) ଶିବ</label>
+            <label class="option"><input type="radio" name="q6" value="B"> (B) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q6" value="C"> (C) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q6" value="D"> (D) ଅର୍ଜୁନ</label>
+        </div>
+        <div class="question">
+            <h3>7. କେତେଥର ଶବ୍ଦ ସୃଷ୍ଟି କରିବାକୁ ଶିବ ସିଂଘନାଦକୁ ଆଦେଶ ଦେଇଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q7" value="A"> (A) ଏକଥର</label>
+            <label class="option"><input type="radio" name="q7" value="B"> (B) ଚାରିଥର</label>
+            <label class="option"><input type="radio" name="q7" value="C"> (C) ସାତଥର</label>
+            <label class="option"><input type="radio" name="q7" value="D"> (D) ଆଠଥର</label>
+        </div>
+        <div class="question">
+            <h3>8. ସିଂଘନାଦର ଶବ୍ଦ ଶୁଣି କାହାର ନିଦ୍ରା ଭଗ୍ନ ହେଲା?</h3>
+            <label class="option"><input type="radio" name="q8" value="A"> (A) ମାନଗୋବିନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q8" value="B"> (B) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q8" value="C"> (C) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q8" value="D"> (D) ଅର୍ଜୁନ</label>
+        </div>
+        <div class="question">
+            <h3>9. ଭୀମର ଭୟଙ୍କର ଶବ୍ଦରେ ଲକ୍ଷ୍ମୀଙ୍କ କୋଳ ତ୍ୟାଗ କରି କିଏ ଗର୍ଜି ଉଠିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q9" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q9" value="B"> (B) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q9" value="C"> (C) ଭୀମ</label>
+            <label class="option"><input type="radio" name="q9" value="D"> (D) ଗୋବିନ୍ଦ</label>
+        </div>
+        <div class="question">
+            <h3>10. ଶ୍ରୀକୃଷ୍ଣ କିଏ?</h3>
+            <label class="option"><input type="radio" name="q10" value="A"> (A) ବିଷ୍ଣୁ</label>
+            <label class="option"><input type="radio" name="q10" value="B"> (B) ଶିବ</label>
+            <label class="option"><input type="radio" name="q10" value="C"> (C) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q10" value="D"> (D) ବ୍ରହ୍ମା</label>
+        </div>
+        <div class="question">
+            <h3>11. ଭୀମଙ୍କର ଜନ୍ମ କେଉଁ ଗାଁରେ ହୋଇଥିଲା?</h3>
+            <label class="option"><input type="radio" name="q11" value="A"> (A) ଏକାଚକ୍ର</label>
+            <label class="option"><input type="radio" name="q11" value="B"> (B) ବାଣ୍ଡବାର</label>
+            <label class="option"><input type="radio" name="q11" value="C"> (C) କାମ୍ବଳି</label>
+            <label class="option"><input type="radio" name="q11" value="D"> (D) ତ୍ରିପୁରା</label>
+        </div>
+        <div class="question">
+            <h3>12. ବିଶ୍ୱନାଥଙ୍କୁ କେଉଁ ଦେବତା ବେଶି ପ୍ରିୟ?</h3>
+            <label class="option"><input type="radio" name="q12" value="A"> (A) କୌଣ୍ଡିନ୍ଧ</label>
+            <label class="option"><input type="radio" name="q12" value="B"> (B) ସର୍ବେଶ୍ୱର</label>
+            <label class="option"><input type="radio" name="q12" value="C"> (C) ଦୁର୍ଗା</label>
+            <label class="option"><input type="radio" name="q12" value="D"> (D) ସରସ୍ବତୀ</label>
+        </div>
+        <div class="question">
+            <h3>13. ବିଶ୍ୱନାଥଙ୍କୁ ସିଂଘନାଦ କେଉଁ ସମୟରେ ମାଗିଲେ?</h3>
+            <label class="option"><input type="radio" name="q13" value="A"> (A) ଦିନେ</label>
+            <label class="option"><input type="radio" name="q13" value="B"> (B) ରାତିରେ</label>
+            <label class="option"><input type="radio" name="q13" value="C"> (C) ସକାଳରେ</label>
+            <label class="option"><input type="radio" name="q13" value="D"> (D) ବେଳାକୁ</label>
+        </div>
+        <div class="question">
+            <h3>14. ଭୀମଙ୍କ ସହିତ କେଉଁ ବ୍ୟକ୍ତି ଜନ୍ମ ହୋଇଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q14" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q14" value="B"> (B) ସହଦେବ</label>
+            <label class="option"><input type="radio" name="q14" value="C"> (C) ବଳରାମ</label>
+            <label class="option"><input type="radio" name="q14" value="D"> (D) ଦୁର୍ଯ୍ୟୋଧନ</label>
+        </div>
+        <div class="question">
+            <h3>15. ବିଶ୍ୱନାଥଙ୍କର ବାସ କେଉଁ ତଳେ ହେବାକୁ ଯାଞ୍ଚ କରିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q15" value="A"> (A) ପାର୍ଜନ୍ୟ</label>
+            <label class="option"><input type="radio" name="q15" value="B"> (B) ବୃହସ୍ପତି</label>
+            <label class="option"><input type="radio" name="q15" value="C"> (C) ଦ୍ୱାରକା</label>
+            <label class="option"><input type="radio" name="q15" value="D"> (D) ତାଳବନ</label>
+        </div>
+        <div class="question">
+            <h3>16. ଭୀମଙ୍କ ସ୍ଥାନ କେଉଁଥିରେ?</h3>
+            <label class="option"><input type="radio" name="q16" value="A"> (A) ଅସ୍ତ୍ରାପୁର</label>
+            <label class="option"><input type="radio" name="q16" value="B"> (B) କର୍ଣ୍ଟକ</label>
+            <label class="option"><input type="radio" name="q16" value="C"> (C) ଗୋବିନ୍ଦପୁର</label>
+            <label class="option"><input type="radio" name="q16" value="D"> (D) ଭାରତ</label>
+        </div>
+        <div class="question">
+            <h3>17. କେଉଁ ମାଳା ସହିତ ଭୀମ ଚଳିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q17" value="A"> (A) ଗୋପାଳ</label>
+            <label class="option"><input type="radio" name="q17" value="B"> (B) ଅଶ୍ୱଥାମା</label>
+            <label class="option"><input type="radio" name="q17" value="C"> (C) ବଳରାମ</label>
+            <label class="option"><input type="radio" name="q17" value="D"> (D) ସହଦେବ</label>
+        </div>
+        <div class="question">
+            <h3>18. ଭୀମଙ୍କର ପତ୍ନୀ କେଉଁ ନାମରେ ଜଣାଜାଣି?</h3>
+            <label class="option"><input type="radio" name="q18" value="A"> (A) ହୀମା</label>
+            <label class="option"><input type="radio" name="q18" value="B"> (B) ମାଧବୀ</label>
+            <label class="option"><input type="radio" name="q18" value="C"> (C) ବୃନ୍ଦା</label>
+            <label class="option"><input type="radio" name="q18" value="D"> (D) ଦୀପ୍ତୀ</label>
+        </div>
+        <div class="question">
+            <h3>19. ସିଂଘନାଦର ଶବ୍ଦ ଶୁଣି କାହାର ନିଦ୍ରା ଭଗ୍ନ ହେଲା?</h3>
+            <label class="option"><input type="radio" name="q19" value="A"> (A) ମାନଗୋବିନ୍ଦ</label>
+            <label class="option"><input type="radio" name="q19" value="B"> (B) ଇନ୍ଦ୍ର</label>
+            <label class="option"><input type="radio" name="q19" value="C"> (C) ଯୁଧୁଷ୍ଠିର</label>
+            <label class="option"><input type="radio" name="q19" value="D"> (D) ଅର୍ଜୁନ</label>
+        </div>
+        <div class="question">
+            <h3>20. ଭୀମଙ୍କ ସହିତ କେଉଁ ବ୍ୟକ୍ତି ଚୁଣ୍ଡି ହେଲେ?</h3>
+            <label class="option"><input type="radio" name="q20" value="A"> (A) ଅର୍ଜୁନ</label>
+            <label class="option"><input type="radio" name="q20" value="B"> (B) ଦୁର୍ଯ୍ୟୋଧନ</label>
+            <label class="option"><input type="radio" name="q20" value="C"> (C) ବଳରାମ</label>
+            <label class="option"><input type="radio" name="q20" value="D"> (D) ସହଦେବ</label>
+        </div>
+            <div class="question">
+            <h3>21. ବିଶ୍ୱନାଥଙ୍କର ଦ୍ୱାରକା କେଉଁ ପ୍ରକାରରେ?</h3>
+            <label class="option"><input type="radio" name="q21" value="A"> (A) ଏକ ଶ୍ରୀକ୍ରୀଷ୍ଣ ଦ୍ୱାରକା</label>
+            <label class="option"><input type="radio" name="q21" value="B"> (B) ଏକ ବାସ୍ତବିକ ଦ୍ୱାରକା</label>
+            <label class="option"><input type="radio" name="q21" value="C"> (C) ଏକ ଦେବୀ ଦ୍ୱାରକା</label>
+            <label class="option"><input type="radio" name="q21" value="D"> (D) ଏକ ଅଲ୍ଲାହ ଦ୍ୱାରକା</label>
+        </div>
+        <div class="question">
+            <h3>22. ବିଶ୍ୱନାଥଙ୍କୁ କେଉଁ ଦେବୀ ଦେଖିବାକୁ ଯାଞ୍ଚ କରିଛନ୍ତି?</h3>
+            <label class="option"><input type="radio" name="q22" value="A"> (A) ସରସ୍ବତୀ</label>
+            <label class="option"><input type="radio" name="q22" value="B"> (B) ଦୁର୍ଗା</label>
+            <label class="option"><input type="radio" name="q22" value="C"> (C) କାଳୀ</label>
+            <label class="option"><input type="radio" name="q22" value="D"> (D) ରାଧା</label>
+        </div>
+        <div class="question">
+            <h3>23. ବିଶ୍ୱନାଥଙ୍କର ସଙ୍ଗୀ ଦେବୀ କେଉଁ?</h3>
+            <label class="option"><input type="radio" name="q23" value="A"> (A) ତର୍କଶ୍ରୀ</label>
+            <label class="option"><input type="radio" name="q23" value="B"> (B) କୁମାରୀ</label>
+            <label class="option"><input type="radio" name="q23" value="C"> (C) ଶାମ୍ବୁଳୀ</label>
+            <label class="option"><input type="radio" name="q23" value="D"> (D) ସାରଦା</label>
+        </div>
+        <div class="question">
+            <h3>24. ବିଶ୍ୱନାଥଙ୍କୁ କେଉଁ ବଦଳା କିଆ କରିଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q24" value="A"> (A) ଜଳଧର</label>
+            <label class="option"><input type="radio" name="q24" value="B"> (B) ବଳୀରାଜ</label>
+            <label class="option"><input type="radio" name="q24" value="C"> (C) ବାଣିରାଜ</label>
+            <label class="option"><input type="radio" name="q24" value="D"> (D) ବୃନ୍ଦା</label>
+        </div>
+        <div class="question">
+            <h3>25. ବିଶ୍ୱନାଥଙ୍କୁ କେଉଁ ପ୍ରକାରର ଜୀବନ ଦିଆଯାଏ?</h3>
+            <label class="option"><input type="radio" name="q25" value="A"> (A) ସୃଷ୍ଟି</label>
+            <label class="option"><input type="radio" name="q25" value="B"> (B) ସାର୍ବଭୌମ</label>
+            <label class="option"><input type="radio" name="q25" value="C"> (C) ବୃହତ</label>
+            <label class="option"><input type="radio" name="q25" value="D"> (D) ବାଣୀ</label>
+        </div>
+           <div class="question">
+            <h3>26. ବିଶ୍ୱନାଥଙ୍କ ନାମ କିଏ ଥିଲେ?</h3>
+            <label class="option"><input type="radio" name="q26" value="A"> (A) ଶଙ୍କର</label>
+            <label class="option"><input type="radio" name="q26" value="B"> (B) ବିଶ୍ୱନାଥ</label>
+            <label class="option"><input type="radio" name="q26" value="C"> (C) ମହାଦେବ</label>
+            <label class="option"><input type="radio" name="q26" value="D"> (D) ସିବ</label>
+        </div>
+
+
+
+        </div>
+        <button onclick="submitQuiz()">Submit</button>
+
+        <div class="result" id="result"></div>
+    
+
+    <script>
+        function submitQuiz() {
+            const totalQuestions = 26;
+            let score = 0;
+
+            
+            const correctAnswers = [
+                 "A", "D", "C", "A", "B", "C", "C", "D", "D", "B",
+                 "A", "C", "C", "A", "B", "D", "C", "D", "B", "D",
+                "A", "B", "C", "A", "B", "C"
+            ];
+
+            
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const answerValue = selectedOption.value;
+                    if (answerValue === correctAnswers[i - 1]) {
+                        score++;
+                        selectedOption.parentElement.classList.add('correct');
+                    } else {
+                        selectedOption.parentElement.classList.add('wrong');
+                    }
+                }
+            }
+
+            
+            const result = document.getElementById('result');
+            result.textContent = `Your score is ${score} out of ${totalQuestions}`;
+        }
+    </script>
+</body>
+</html>
